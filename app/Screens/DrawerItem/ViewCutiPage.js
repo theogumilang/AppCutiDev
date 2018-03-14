@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity  } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet  } from 'react-native';
 import Icon from "react-native-vector-icons/MaterialIcons";
 
 class ViewCutiPage extends Component {
@@ -16,11 +16,23 @@ class ViewCutiPage extends Component {
   });
   render() {
     return (
-      <View>
-        <Text> textInComponent </Text>
+      <View style={styles.Container} >
+        <Text style={styles.TextStyle} > Cuti Anda Tinggal '8' Hari </Text>
       </View>
     );
   }
 }
+const styles = StyleSheet.create({
+    Container: {
+     flex: 1,
+     justifyContent: 'center',
+     alignItems: 'center',
+
+    },
+    TextStyle : {
+      fontSize: 20,
+      fontWeight: 'bold',
+    }
+});
 
 export default ViewCutiPage;

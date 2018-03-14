@@ -22,16 +22,29 @@ class DrawerMenu extends Component {
   render() {
     return (
       <View style={styles.container}>
+       <View
+  style={{
+    borderBottomColor: 'black',
+    borderBottomWidth: 1,
+  }}
+/>
         <TouchableOpacity
           style={styles.menuItem}
           onPress={() =>
             this._navigate("MainPage", { isStatusBarHidden: false })}
         >
+       
         <View style={{flexDirection:'row'}} >
           <Icon name="dashboard" size={30} color="black" />
           <Text style={styles.menuItemText}>Main Menu</Text>
           </View>
         </TouchableOpacity>
+        <View
+  style={{
+    borderBottomColor: 'black',
+    borderBottomWidth: 1,
+  }}
+/>
         <TouchableOpacity
           style={styles.menuItem}
           onPress={() => this._navigate("FormCuti", { isStatusBarHidden: false })}
@@ -41,6 +54,12 @@ class DrawerMenu extends Component {
           <Text style={styles.menuItemText}>Form Cuti</Text>
           </View>
         </TouchableOpacity>
+        <View
+  style={{
+    borderBottomColor: 'black',
+    borderBottomWidth: 1,
+  }}
+/>
         <TouchableOpacity
           style={styles.menuItem}
           onPress={() => this._navigate("ViewCutiPage", { isStatusBarHidden: false })}
@@ -50,7 +69,12 @@ class DrawerMenu extends Component {
           <Text style={styles.menuItemText}>Lihat Sisa Cuti</Text>
           </View>
         </TouchableOpacity>
-      
+        <View
+  style={{
+    borderBottomColor: 'black',
+    borderBottomWidth: 1,
+  }}
+/>
       </View>
     );
   }
